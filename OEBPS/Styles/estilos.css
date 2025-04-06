@@ -1,12 +1,13 @@
-
 /* Configuración general */
 body {
   font-family: "serif", Georgia, Times, "Times New Roman";
-  line-height: 1.5;
+  line-height: 1.6; /* Mejora la legibilidad */
   margin: 5%;
   text-align: justify;
   widows: 2;
   orphans: 2;
+  background-color: #f9f9f9; /* Fondo suave para lectura */
+  color: #333; /* Texto oscuro para mejor contraste */
 }
 
 /* Títulos */
@@ -15,41 +16,45 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 0.5em;
+  color: #222; /* Color más oscuro para títulos */
 }
 
 /* Título principal */
 h1 {
-  font-size: 2em;
+  font-size: 2.2em; /* Tamaño ligeramente mayor */
+  font-weight: bold;
 }
 
 /* Subtítulos */
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 /* Párrafos */
-/* Mejora de justificación y apariencia de párrafos */
 p {
   margin-top: 0;
-  margin-bottom: 1em;
-  text-indent: 0;
+  margin-bottom: 1.2em; /* Espaciado más amplio */
+  text-indent: 1.5em; /* Sangría para párrafos */
   text-align: justify;
   hyphens: auto;
   word-spacing: 0.05em;
+  line-height: 1.8; /* Mejora la legibilidad */
 }
-
-
-
 
 /* Citas */
 blockquote {
   margin-left: 2em;
   margin-right: 2em;
   font-style: italic;
+  border-left: 4px solid #ccc; /* Línea decorativa */
+  padding-left: 1em;
+  color: #555;
 }
 
 /* Listas */
@@ -57,6 +62,15 @@ ul, ol {
   margin-top: 0;
   margin-bottom: 1em;
   padding-left: 2em;
+  line-height: 1.6;
+}
+
+ul li {
+  list-style-type: disc; /* Estilo de viñetas */
+}
+
+ol li {
+  list-style-type: decimal; /* Estilo numérico */
 }
 
 /* Imágenes */
@@ -66,49 +80,68 @@ img {
   margin-right: auto;
   max-width: 100%;
   height: auto;
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 4px; /* Esquinas redondeadas */
 }
 
-/* Notas a pie de página (opcional) */
+/* Notas a pie de página */
 .footnote {
   font-size: 0.8em;
   vertical-align: super;
+  color: #555; /* Color más claro */
 }
 
 /* Separador de secciones */
 hr {
   border: 0;
-  height: 1px;
-  background: #ccc;
+  height: 2px;
+  background: #aaa; /* Color más visible */
   margin: 2em 0;
 }
 
+/* Sección de versos */
 section.verse {
-    text-align: center;
-    margin: 2em 0;
+  text-align: center;
+  margin: 2em 0;
 }
 
 section.verse h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }
 
 section.verse p.chinese {
-    font-size: 1.3em;
-    line-height: 1.6;
-    margin: 0.5em 0;
-    font-family: "Noto Serif CJK SC", "Songti SC", "SimSun", serif;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.8;
+  margin: 0.5em 0;
+  font-family: "Noto Serif CJK SC", "Songti SC", "SimSun", serif;
 }
 
 section.verse p.pinyin {
-    font-size: 1em;
-    font-style: italic;
-    margin: 0.5em 0;
-    color: #555555;
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  margin: 0.5em 0;
+  color: #666; /* Color más claro */
 }
 
 section.verse p.translation {
-    font-size: 1em;
-    margin: 1em 0;
-    font-family: "Georgia", serif;
+  text-align: center;
+  font-size: 1em;
+  margin: 1em 0;
+  font-family: "Georgia", serif;
+  color: #444; /* Color intermedio */
+}
+
+/* Enlaces */
+a {
+  color: #0066cc; /* Azul para enlaces */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
