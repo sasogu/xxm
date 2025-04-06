@@ -32,15 +32,18 @@ h3 {
 }
 
 /* Párrafos */
+/* Mejora de justificación y apariencia de párrafos */
 p {
   margin-top: 0;
   margin-bottom: 1em;
+  text-indent: 0;
+  text-align: justify;
+  hyphens: auto;
+  word-spacing: 0.05em;
 }
 
-/* Sangría al principio de cada párrafo, menos después de títulos */
-p + p {
-  text-indent: 1.5em;
-}
+
+
 
 /* Citas */
 blockquote {
