@@ -105,6 +105,13 @@ section.verse {
   margin: 2em 0;
 }
 
+/* Sección de titulo */
+section.title {
+  font-size: 2.8em;
+  text-align: center;
+  margin: 2em 0;
+}
+
 section.verse h2 {
   text-align: center;
   font-size: 1.6em;
