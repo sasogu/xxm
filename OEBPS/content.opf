@@ -8,6 +8,7 @@
     <meta content="1.9.20" name="Sigil version"/>
     <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2025-04-06</dc:date>
     <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:3ddac208-d58f-4e7e-9141-455241c4ebf1</dc:identifier>
+    <meta name="cover" content="img/portada.jpg"/>
   </metadata>
   <manifest>
     <item id="Section0001.xhtml" href="Text/Section0001.xhtml" media-type="application/xhtml+xml"/>
@@ -16,7 +17,7 @@
     <item id="Section0002.xhtml" href="Text/Section0002.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0003.xhtml" href="Text/Section0003.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0004.xhtml" href="Text/Section0004.xhtml" media-type="application/xhtml+xml"/>
-    <item id="portada.jpg" href="Images/portada.jpg" media-type="image/jpeg"/>
+    <item id="portada.jpg" href="img/portada.jpg" media-type="image/jpeg"/>
     <item id="Section0005.xhtml" href="Text/Section0005.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0006.xhtml" href="Text/Section0006.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0007.xhtml" href="Text/Section0007.xhtml" media-type="application/xhtml+xml"/>
