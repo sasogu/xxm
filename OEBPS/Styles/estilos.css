@@ -40,7 +40,7 @@ h3 {
 p {
   margin-top: 0;
   margin-bottom: 1.2em; /* Espaciado más amplio */
-  text-indent: 1.5em; /* Sangría para párrafos */
+  text-indent: 0em; /* Sangría para párrafos */
   text-align: justify;
   hyphens: auto;
   word-spacing: 0.05em;
