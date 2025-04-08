@@ -17,7 +17,7 @@
     <item id="Section0002.xhtml" href="Text/Section0002.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0003.xhtml" href="Text/Section0003.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0004.xhtml" href="Text/Section0004.xhtml" media-type="application/xhtml+xml"/>
-    <item id="portada.jpg" href="img/portada.jpg" media-type="image/jpeg"/>
+    
     <item id="Section0005.xhtml" href="Text/Section0005.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0006.xhtml" href="Text/Section0006.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0007.xhtml" href="Text/Section0007.xhtml" media-type="application/xhtml+xml"/>
@@ -29,7 +29,7 @@
     <item id="Section0013.xhtml" href="Text/Section0013.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0014.xhtml" href="Text/Section0014.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0015.xhtml" href="Text/Section0015.xhtml" media-type="application/xhtml+xml"/>
-    <item id="Section0016.xhtml" href="Text/Section00º6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Section0016.xhtml" href="Text/Section0016.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0017.xhtml" href="Text/Section0017.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0018.xhtml" href="Text/Section0018.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0019.xhtml" href="Text/Section0019.xhtml" media-type="application/xhtml+xml"/>
@@ -37,7 +37,28 @@
     <item id="Section0021.xhtml" href="Text/Section0021.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0022.xhtml" href="Text/Section0022.xhtml" media-type="application/xhtml+xml"/>
     <item id="Section0023.xhtml" href="Text/Section0023.xhtml" media-type="application/xhtml+xml"/>
-    
+   
+  <!-- Otros elementos ya existentes -->
+  <item id="portada.jpg" href="img/portada.jpg" media-type="image/jpeg"/>
+  <item id="image16.jpg" href="img/image16.jpg" media-type="image/jpeg"/>
+  <item id="image11.jpg" href="img/image11.jpg" media-type="image/jpeg"/>
+  <item id="image15.jpg" href="img/image15.jpg" media-type="image/jpeg"/>
+  <item id="88x31.png" href="img/88x31.png" media-type="image/png"/>
+  <item id="image14.jpg" href="img/image14.jpg" media-type="image/jpeg"/>
+  <item id="image13.jpg" href="img/image13.jpg" media-type="image/jpeg"/>
+  <item id="image04.jpg" href="img/image04.jpg" media-type="image/jpeg"/>
+  <item id="image09.jpg" href="img/image09.jpg" media-type="image/jpeg"/>
+  <item id="image08.jpg" href="img/image08.jpg" media-type="image/jpeg"/>
+  <item id="image03.jpg" href="img/image03.jpg" media-type="image/jpeg"/>
+  <item id="image10.jpg" href="img/image10.jpg" media-type="image/jpeg"/>
+  <item id="image17.jpg" href="img/image17.jpg" media-type="image/jpeg"/>
+  <item id="image06.jpg" href="img/image06.jpg" media-type="image/jpeg"/>
+  <item id="image12.jpg" href="img/image12.jpg" media-type="image/jpeg"/>
+  <item id="image01.jpg" href="img/image01.jpg" media-type="image/jpeg"/>
+  <item id="image05.jpg" href="img/image05.jpg" media-type="image/jpeg"/>
+  <item id="image07.jpg" href="img/image07.jpg" media-type="image/jpeg"/>
+  <item id="image02.jpg" href="img/image02.jpg" media-type="image/jpeg"/>
+
   </manifest>
   <spine toc="ncx">
     <itemref idref="Section0001.xhtml"/>
