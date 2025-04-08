@@ -40,7 +40,7 @@
    
   <!-- Otros elementos ya existentes -->
   <item id="portada.jpg" href="img/portada.jpg" media-type="image/jpeg"/>
-  <item id="image16.jpg" href="img/image16.jpg" media-type="image/jpeg"/>
+  
   <item id="image11.jpg" href="img/image11.jpg" media-type="image/jpeg"/>
   <item id="image15.jpg" href="img/image15.jpg" media-type="image/jpeg"/>
   <item id="88x31.png" href="img/88x31.png" media-type="image/png"/>
@@ -51,7 +51,7 @@
   <item id="image08.jpg" href="img/image08.jpg" media-type="image/jpeg"/>
   <item id="image03.jpg" href="img/image03.jpg" media-type="image/jpeg"/>
   <item id="image10.jpg" href="img/image10.jpg" media-type="image/jpeg"/>
-  <item id="image17.jpg" href="img/image17.jpg" media-type="image/jpeg"/>
+  
   <item id="image06.jpg" href="img/image06.jpg" media-type="image/jpeg"/>
   <item id="image12.jpg" href="img/image12.jpg" media-type="image/jpeg"/>
   <item id="image01.jpg" href="img/image01.jpg" media-type="image/jpeg"/>
