@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Título principal */
 h1 {
-  font-size: 2.2em; /* Tamaño ligeramente mayor */
+  font-size: 2em; /* Tamaño ligeramente mayor */
   font-weight: bold;
 }
 
