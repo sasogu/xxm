@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK} % Para buen soporte de chino
+\setmainfont{FreeSerif}[
+    Path = /usr/share/fonts/truetype/freefont/,
+    Extension = .ttf,
+    UprightFont = *Serif,
+    BoldFont = *SerifBold,
+    ItalicFont = *SerifItalic,
+    BoldItalicFont = *SerifBoldItalic
+]
+\newCJKfontfamily\CJKmainfont{Noto Sans CJK SC}[
+    Path = /usr/share/fonts/opentype/noto/,
+    Extension = .otf
+]
+\newfontfamily\devanagarifont{Noto Sans Devanagari}[
+    Path = /usr/share/fonts/opentype/noto/,
+    Extension = .otf
+]
+\newfontfamily\symbolfont{Noto Sans Symbols2}[
+    Path = /usr/share/fonts/opentype/noto/,
+    Extension = .otf
+]
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue}
+
+$if(title)$
+\title{$title$}
+$endif$
+
+$if(author)$
+\author{$author$}
+$endif$
+
+\begin{document}
+
+$if(title)$
+\maketitle
+$endif$
+
+$body$
+
+\end{document}
