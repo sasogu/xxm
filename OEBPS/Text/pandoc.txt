@@ -1,0 +1,14 @@
+pandoc Section*.xhtml \
+  --from html \
+  --to pdf \
+  --pdf-engine=xelatex \
+  -H header.tex \
+  --lua-filter=verseblock.lua \
+  -V lang=es \
+  -V geometry=inner=3cm,outer=2cm,top=2.5cm,bottom=2.5cm,bindingoffset=1cm \
+  -V papersize=a5paper \
+  -V title="Xin Xin Ming: Tratado sobre la Confianza en la Naturaleza Original" \
+  -V author="Daizan Soriano" \
+  --toc \
+  --toc-depth=1 \
+  -o libro_completo.pdf

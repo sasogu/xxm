@@ -1,6 +1,15 @@
 \usepackage{fontspec}
 \usepackage{xeCJK}
+\usepackage{titlesec}
 \setmainfont{FreeSerif}
 \setCJKmainfont{Noto Sans CJK SC}
 \newfontfamily\devanagarifont{Noto Sans Devanagari}
 \newfontfamily\symbolfont{Noto Sans Symbols2}
+
+\titleformat{\section}
+  {\normalfont\Huge\bfseries}
+  {\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+\newcommand{\sectionbreak}{\clearpage}
+

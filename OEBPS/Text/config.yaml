@@ -1,7 +1,0 @@
-pdf-engine: xelatex
-variables:
-  geometry: margin=2cm
-  lang: es
-  mainfont: "Noto Serif"
-  CJKmainfont: "Noto Serif CJK SC"
-  mainfontoptions: "Renderer=Basic"
