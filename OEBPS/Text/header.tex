@@ -1,17 +1,26 @@
 \usepackage{fontspec}
 \usepackage{xeCJK}
 \usepackage{titlesec}
-\setmainfont{FreeSerif}
+\setmainfont{FreeSerif}[Scale=1.2] % Escala la fuente principal un 20% más grande
 \setCJKmainfont{Noto Sans CJK SC}
 \newfontfamily\devanagarifont{Noto Sans Devanagari}
 \newfontfamily\symbolfont{Noto Sans Symbols2}
+\linespread{1.2} % Ajusta el factor de interlineado (1.0 es el predeterminado)
 
 
 
-\titleformat{\section}
-  {\normalfont\Huge\bfseries}
+\titleformat{\section}[block]
+  {\normalfont\Huge\bfseries} % Estilo general de las secciones
   {\thesection}{1em}{}
 \titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
 
 \newcommand{\sectionbreak}{}
+
+% Estilo personalizado para verse
+\newcommand{\versestyle}{
+  \titleformat{\section}[block]
+    {\normalfont\Large\itshape} % Fuente más grande y cursiva
+    {\thesection}{1em}{}
+  \titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+}
 
