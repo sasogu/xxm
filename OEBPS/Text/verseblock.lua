@@ -18,6 +18,8 @@ function Div(el)
                 pandoc.RawBlock('latex', '\\clearpage'),
                 pandoc.RawBlock('latex', '\\vspace*{\\fill}'),
                 pandoc.RawBlock('latex', '\\noindent\\begin{minipage}{\\textwidth}\\centering'),
+                pandoc.RawBlock('latex', '\\Large'), -- << Añadido: tamaño de fuente
+                pandoc.RawBlock('latex', '\\setlength{\\parskip}{1em}'), -- Espacio entre párrafos
                 pandoc.RawBlock('latex', content),
                 pandoc.RawBlock('latex', '\\end{minipage}'),
                 pandoc.RawBlock('latex', '\\vspace*{\\fill}'),
@@ -26,6 +28,7 @@ function Div(el)
         end
     end
 end
+
 
   
   function Header(el)
