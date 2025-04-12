@@ -4,6 +4,7 @@ pandoc Section*.xhtml \
   --pdf-engine=xelatex \
   -H header.tex \
   --lua-filter=verseblock.lua \
+  --toc \
   -V lang=es \
   -V geometry=inner=3cm,outer=2cm,top=2.5cm,bottom=2.5cm,bindingoffset=1cm \
   -V papersize=a5paper \
