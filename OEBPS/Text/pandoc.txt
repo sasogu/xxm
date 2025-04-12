@@ -5,6 +5,7 @@ pandoc Section*.xhtml \
   -H header.tex \
   --lua-filter=verseblock.lua \
   --toc \
+  --toc-depth=2 \
   -V lang=es \
   -V geometry=inner=3cm,outer=2cm,top=2.5cm,bottom=2.5cm,bindingoffset=1cm \
   -V papersize=a5paper \
