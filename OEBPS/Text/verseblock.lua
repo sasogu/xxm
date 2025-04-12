@@ -52,15 +52,40 @@ local notes = {
     ["nota7"] = "La identificación con un yo autónomo e independiente se considera una ilusión en el budismo."
 }
 
--- Función para procesar enlaces y convertirlos en notas al pie
+-- Función para procesar enlaces y convertirlos en notas al pie o enlaces internos
 function Link(el)
     if el.target:match("^#nota") then
         -- Extraer el identificador de la nota (por ejemplo, "nota1")
         local note_id = el.target:match("#(nota%d+)")
         -- Buscar el contenido de la nota en la tabla
         local note_content = notes[note_id] or "Nota no encontrada."
-        -- Generar una nota al pie en LaTeX
-        return pandoc.RawInline('latex', '\\footnote{' .. note_content .. '}')
+
+        if FORMAT:match("latex") then
+            -- Generar una nota al pie en LaTeX
+            return pandoc.RawInline('latex', '\\footnote{' .. note_content .. '}')
+        elseif FORMAT:match("epub") or FORMAT:match("html") then
+            -- Generar un enlace interno para EPUB o HTML
+            return pandoc.Link({pandoc.Str("[" .. note_id .. "]")}, "#" .. note_id)
+        else
+            -- Devolver el enlace original para otros formatos
+            return el
+        end
+    end
+end
+
+-- Función para generar el contenido de las notas en EPUB
+function Div(el)
+    if FORMAT:match("epub") or FORMAT:match("html") then
+        if el.identifier == "notas" then
+            local note_blocks = {}
+            for note_id, note_content in pairs(notes) do
+                table.insert(note_blocks, pandoc.Para({
+                    pandoc.RawInline("html", '<a id="' .. note_id .. '"></a>'),
+                    pandoc.Str(note_id .. ": " .. note_content)
+                }))
+            end
+            return pandoc.Div(note_blocks, {id = "notas"})
+        end
     end
 end
 
